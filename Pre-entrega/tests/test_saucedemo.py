@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 def driver():
     driver = webdriver.Edge()
     driver.maximize_window()
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(20)
     yield driver
     driver.quit()
 
