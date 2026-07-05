@@ -3,32 +3,33 @@ import requests
 from utils.logger import get_logger
 
 logger = get_logger("API_Tests")
-BASE_URL = "https://reqres.in/api"
+# URL 100% abierta y sin bloqueos de proxy/IP
+BASE_URL = "https://jsonplaceholder.typicode.com"
 
 def test_get_users():
     logger.info("Enviando petición GET a /users")
-    response = requests.get(f"{BASE_URL}/users?page=2")
+    response = requests.get(f"{BASE_URL}/users/1")
     
     assert response.status_code == 200
     json_data = response.json()
-    assert "data" in json_data
-    assert len(json_data["data"]) > 0
+    assert "name" in json_data
     logger.info("API GET validada con código 200 y estructura JSON correcta.")
 
 def test_create_user():
-    payload = {"name": "Nicoll", "job": "Automation QA"}
-    logger.info("Enviando petición POST a /users para creación de recurso.")
-    response = requests.post(f"{BASE_URL}/users", json=payload)
+    payload = {"title": "Nicoll QA", "body": "Automation Test", "userId": 1}
+    logger.info("Enviando petición POST a /posts para creación de recurso.")
+    response = requests.post(f"{BASE_URL}/posts", json=payload)
     
     assert response.status_code == 201
     json_data = response.json()
-    assert json_data["name"] == payload["name"]
+    assert json_data["title"] == payload["title"]
     assert "id" in json_data
     logger.info(f"API POST exitosa. Recurso creado con ID: {json_data['id']}.")
 
 def test_delete_user():
-    logger.info("Enviando petición DELETE a /users/2")
-    response = requests.delete(f"{BASE_URL}/users/2")
+    logger.info("Enviando petición DELETE a /posts/1")
+    response = requests.delete(f"{BASE_URL}/posts/1")
     
-    assert response.status_code == 204
-    logger.info("API DELETE verificada con código de estado 204 (No Content).")
+    # JSONPlaceholder responde con 200 en DELETE exitoso
+    assert response.status_code == 200
+    logger.info("API DELETE verificada con código de estado 200.")
