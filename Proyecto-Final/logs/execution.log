@@ -1,28 +1,16 @@
-2026-07-04 21:54:13,653 - INFO - API_Tests - Enviando petición GET a /users
-2026-07-04 21:54:15,235 - INFO - API_Tests - Enviando petición POST a /users para creación de recurso.
-2026-07-04 21:54:16,693 - INFO - API_Tests - Enviando petición DELETE a /users/2
-2026-07-04 22:17:36,449 - INFO - API_Tests - Enviando petición GET a /users
-2026-07-04 22:17:37,719 - INFO - API_Tests - Enviando petición POST a /users para creación de recurso.
-2026-07-04 22:17:38,711 - INFO - API_Tests - Enviando petición DELETE a /users/2
-2026-07-04 22:17:46,414 - INFO - UI_Tests - Iniciando test de login para usuario: standard_user
-2026-07-04 22:17:48,406 - INFO - UI_Tests - Login exitoso verificado correctamente.
-2026-07-04 22:17:51,869 - INFO - UI_Tests - Iniciando test de login para usuario: locked_out_user
-2026-07-04 22:17:52,772 - WARNING - UI_Tests - Escenario negativo validado con captura de error en UI.
-2026-07-04 22:17:56,197 - INFO - UI_Tests - Iniciando test de login para usuario: invalid_user
-2026-07-04 22:17:57,282 - WARNING - UI_Tests - Escenario negativo validado con captura de error en UI.
-2026-07-04 22:18:00,725 - INFO - UI_Tests - Ejecutando flujo completo de catálogo y adición al carrito.
-2026-07-04 22:18:01,815 - INFO - UI_Tests - Flujo de catálogo e incremento de productos en carrito exitoso.
-2026-07-04 22:23:01,101 - INFO - API_Tests - Enviando petición GET a /users
-2026-07-04 22:23:01,649 - INFO - API_Tests - API GET validada con código 200 y estructura JSON correcta.
-2026-07-04 22:23:01,655 - INFO - API_Tests - Enviando petición POST a /posts para creación de recurso.
-2026-07-04 22:23:02,343 - INFO - API_Tests - API POST exitosa. Recurso creado con ID: 101.
-2026-07-04 22:23:02,349 - INFO - API_Tests - Enviando petición DELETE a /posts/1
-2026-07-04 22:23:03,001 - INFO - API_Tests - API DELETE verificada con código de estado 200.
-2026-07-04 22:23:04,179 - INFO - UI_Tests - Iniciando test de login para usuario: standard_user
-2026-07-04 22:23:05,198 - INFO - UI_Tests - Login exitoso verificado correctamente.
-2026-07-04 22:23:08,627 - INFO - UI_Tests - Iniciando test de login para usuario: locked_out_user
-2026-07-04 22:23:09,640 - WARNING - UI_Tests - Escenario negativo validado con captura de error en UI.
-2026-07-04 22:23:13,124 - INFO - UI_Tests - Iniciando test de login para usuario: invalid_user
-2026-07-04 22:23:14,744 - WARNING - UI_Tests - Escenario negativo validado con captura de error en UI.
-2026-07-04 22:23:18,137 - INFO - UI_Tests - Ejecutando flujo completo de catálogo y adición al carrito.
-2026-07-04 22:23:19,370 - INFO - UI_Tests - Flujo de catálogo e incremento de productos en carrito exitoso.
+2026-07-04 22:48:26,029 - INFO - API_Tests - Enviando petición GET a /users
+2026-07-04 22:48:26,556 - INFO - API_Tests - API GET validada con código 200 y estructura JSON correcta.
+2026-07-04 22:48:26,562 - INFO - API_Tests - Enviando petición POST a /posts para creación de recurso.
+2026-07-04 22:48:27,223 - INFO - API_Tests - API POST exitosa. Recurso creado con ID: 101.
+2026-07-04 22:48:27,228 - INFO - API_Tests - Enviando petición DELETE a /posts/1
+2026-07-04 22:48:27,886 - INFO - API_Tests - API DELETE verificada con código de estado 200.
+2026-07-04 22:48:29,258 - INFO - UI_Tests - Ejecutando Caso 1: Login Exitoso.
+2026-07-04 22:48:30,593 - INFO - UI_Tests - Caso 1 PASSED: Redirección e interfaz validadas.
+2026-07-04 22:48:34,123 - INFO - UI_Tests - Ejecutando Caso 2: Login Negativo (Usuario Bloqueado)
+2026-07-04 22:48:35,106 - WARNING - UI_Tests - Caso 2 PASSED: El sistema bloqueó el acceso correctamente.
+2026-07-04 22:48:38,511 - INFO - UI_Tests - Ejecutando Caso 3: Login Negativo (Datos Falsos)
+2026-07-04 22:48:39,579 - WARNING - UI_Tests - Caso 3 PASSED: Alerta de seguridad disparada correctamente.
+2026-07-04 22:48:42,996 - INFO - UI_Tests - Ejecutando Caso 4: Filtros de Catálogo.
+2026-07-04 22:48:44,094 - INFO - UI_Tests - Caso 4 PASSED: Filtro de menor a mayor aplicado correctamente.
+2026-07-04 22:48:47,559 - INFO - UI_Tests - Ejecutando Caso 5: Flujo completo de Compra.
+2026-07-04 22:48:49,458 - INFO - UI_Tests - Caso 5 PASSED: Compra finalizada de punta a punta con éxito.

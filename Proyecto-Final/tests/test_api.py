@@ -3,7 +3,7 @@ import requests
 from utils.logger import get_logger
 
 logger = get_logger("API_Tests")
-# URL 100% abierta y sin bloqueos de proxy/IP
+
 BASE_URL = "https://jsonplaceholder.typicode.com"
 
 def test_get_users():
@@ -30,6 +30,5 @@ def test_delete_user():
     logger.info("Enviando petición DELETE a /posts/1")
     response = requests.delete(f"{BASE_URL}/posts/1")
     
-    # JSONPlaceholder responde con 200 en DELETE exitoso
     assert response.status_code == 200
     logger.info("API DELETE verificada con código de estado 200.")
