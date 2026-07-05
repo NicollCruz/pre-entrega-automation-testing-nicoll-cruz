@@ -22,5 +22,5 @@ def pytest_runtest_make_report(item, call):
             os.makedirs("screenshots", exist_ok=True)
             timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
             test_name = item.name
-            screenshot_path = f"screenshots/{test_name}_{timestamp}.png"
+            screenshot_path = f"reports/screenshots/{test_name}_{timestamp}.png"
             driver_fixture.save_screenshot(screenshot_path)
